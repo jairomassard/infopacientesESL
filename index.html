@@ -240,7 +240,7 @@
             let transactionFormData = new FormData(form);
             let transactionObj = convertFormDataToTransactionObj(transactionFormData);
             //console.log(transactionObj);
-            console.log(transactionObj);
+            //console.log(transactionObj);
             saveTransactionObj(transactionObj);
             insertRowInTransactionTable(transactionObj);
             EnviarYalaInfo(transactionObj);
@@ -366,7 +366,7 @@
             //convierto mi Array de transacciones a JSON
             let transactionArrayJSON = JSON.stringify(myTransactionArray);
             //Guardo mi array de transacciones en formato JSON en Local storage
-            localStorage.setItem("transactionData", transactionArrayJSON)
+            //localStorage.setItem("transactionData", transactionArrayJSON)
 
         }
 
@@ -382,7 +382,7 @@
             myHeaders.append("content-type", "application/json");
 
             var raw = JSON.stringify([transactionObj]);
-            console.log(raw)
+            //console.log(raw)
 
             var requestOptions = {
                 method: 'POST',
