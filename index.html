@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon"
         href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAnporm4ZehH71YPczHMYcfgRrmokBibZPPLOQru_hwl6RqS9P4EYB2l680trKJj_Xu_rvLleFlmTm1p6z8WGnEb3_KvyyqbnXP4jLVs8u2bclSsVXeM4PuASW-P40uqeWdDZddpDxEyTSXXSv-BgLJjnVjCGaVfYTpGynWYyAp54STXW9P4PGPitX/s1600/IQSpaces_fabicon_v3.jpg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/x-icon" href="IQSpaces_fabicon_v3.ico">
-    <title>Asignación salones</title>
+    <title>Info Pacientes</title>
     <link rel="stylesheet" href="css/estilo.css">
+
     <!--<script src="js/scripts.js"></script>-->
     <script src="js/md5.js"></script>
-
+    <!--<script type="text/javascript" src="js/App.js"> </script>-->
+    <!--<script src="js/App.js"> </script>-->
 </head>
 
 <body>
-
     <div>
         <label>
             <h5></h5>
@@ -26,8 +26,11 @@
     <div class="container">
         <div class="row align-items-end">
             <div class="col">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
-                    alt="Logo" title="Foto tomada por Jairo" width="250" height="100" />
+                <!-- Logo IQ Spaces-->
+                <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
+                                    alt="Logo" title="Foto tomada por Jairo" width="300" height="120" />-->
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjada1WwebPQeQrf7rIaoJgy-g2_AOlzT27I8-Qb0LsiSNxjOC6euxb9fGvK2PUAfRpmpFuLvNVMgsOBo_wa4D7z0rqYrXvGIolj08-4lXaniwxx6YJaO_0o_AoLBH7JmiEGoJn1GK70DEz0KdS5eZz3WOezMpAJNif3Cmt8IuFD6hr9nxCQAYEaD_3/s320/Hospital%20universitario%20san%20Ignacio.jpg"
+                    alt="Logo" title="Foto tomada por Jairo" width="115" height="100" />
             </div>
             <div class="col">
             </div>
@@ -36,324 +39,438 @@
             <h1>Sistema de Cargue de Información - Etiquetas electrónicas</h1>
             <br />
             <div class="col">
-                <h2>SALONES DE CLASE</h2>
+
+
+                <h2>Información del Paciente</h2>
                 <br />
+
                 <form action="" id="transationform">
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Salón</span>
-                        <select class="form-select" name="itemName" id="itemName">
-                            <option value="Salón 1">Salón 1</option>
-                            <option value="Salón 2">Salón 2</option>
-                            <option value="Salón 3">Salón 3</option>
+                        <span class="input-group-text">Habitación Asignada:</span>
+                        <select class="form-select" name="itemBarCode" id="itemBarCode">
+                            <option value="101A">101A</option>
+                            <option value="101B">101B</option>
+                            <option value="201A">201A</option>
+                            <option value="201B">201B</option>
                         </select>
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="itemQrCode">Link QR Salón (opcional)</span>
-                        <input type="text" class="form-control" name="itemQrCode" placeholder="Enlace web" size="60"
-                            maxlength="60" />
-                    </div>
-                    <div>
-                        <br />
-                        <label>
-                            <h3>Clase Actual</h3>
-                        </label>
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="eatMethod">Fecha de Ocupación</span>
-                        <input type="date" class="form-control" name="eatMethod" />
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="itemBaseUnit">Hora Inicio</span>
-                        <input type="time" class="form-control" name="itemBaseUnit" />
-                        <br>
-                        <span class="input-group-text" id="storageCondition">Hora Fin</span>
-                        <input type="time" class="form-control" name="storageCondition" />
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="mixture">Profesor</span>
-                        <input type="text" class="form-control" name="mixture" required size="30" maxlength="30"
-                            placeholder="Nombre y Apellido (opcional)" aria-describedby="mixture" />
-                    </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="goodsNo">Materia</span>
-                        <input type="text" class="form-control" name="goodsNo" id="goodsNo" placeholder="Materia"
+                        <span class="input-group-text" id="itemName">Nombre Completo:</span>
+                        <input type="text" class="form-control" name="itemName" placeholder="Nombres y Apellidos"
                             required size="30" maxlength="30" />
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Estado de Ocupación</span>
-                        <select class="form-select" name="grade" id="grade">
-                            <option value="OCUPADO">OCUPADO</option>
-                            <option value="DISPONIBLE">DISPONIBLE</option>
-                        </select>
+                        <span class="input-group-text" id="goodsNo">No. documento Identidad:</span>
+                        <input type="text" class="form-control" name="goodsNo" placeholder="solo números" required
+                            size="10" minlength="6" maxlength="10" />
+
                     </div>
-                    <div>
-                        <br />
-                        <label>
-                            <h3>Siguiente Clase (PC)</h3>
-                        </label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="stock">Brazalete:</span>
+                        <input type="text" class="form-control" name="stock" placeholder="solo números" required
+                            size="9" minlength="9" maxlength="9" />
+                        <br>
+                        <span class="input-group-text" id="license">EPS:</span>
+                        <input type="text" class="form-control" name="license" placeholder="digite información">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="manufacture">Fecha Nacimiento:</span>
+                        <input type="date" class="form-control" name="manufacture" />
+                        <br>
+                        <span class="input-group-text" id="storageCondition">Edad:</span>
+                        <input type="text" class="form-control" name="storageCondition" placeholder="solo números"
+                            required size="3" minlength="1" maxlength="3" />
                     </div>
 
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="license">Fecha Próxima Clase</span>
-                        <input type="date" class="form-control" name="license" />
+                        <span class="input-group-text">Sexo:</span>
+                        <select class="form-select" name="eatMethod" id="eatMethod">
+                            <option value="Masculino">Masculino</option>
+                            <option value="Femenino">Femenino</option>
+                        </select>
+                        <span class="input-group-text">Grupo y RH:</span>
+                        <select class="form-select" name="itemProductionPlace" id="itemProductionPlace">
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-text" id="specifications">Alergias:</span>
+                        <textarea class="form-control" name="specifications" placeholder="digite información"
+                            aria-label="Alergias:"></textarea>
+                    </div>
+                    <div>
+                        <label>
+                            <h5></h5>
+                        </label>
                     </div>
                     <div class="input-group mb-3">
-                        <span class="input-group-text" id="itemProductionPlace">Hora Inicio</span>
-                        <input type="time" class="form-control" name="itemProductionPlace" />
+                        <span class="input-group-text">Riesgo de Caídas:</span>
+                        <select class="form-select" name="grade" id="grade">
+                            <option value="Bajo">Bajo</option>
+                            <option value="Medio">Medio</option>
+                            <option value="Medio">Alto</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="company">Doctor Tratante:</span>
+                        <input type="text" class="form-control" name="company" id="company"
+                            placeholder="Primer Nombre y Apellido" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="itemQrCode">Link Historia clinica:</span>
+                        <input type="text" class="form-control" name="itemQrCode" id="itemQrCode"
+                            placeholder="Enlace web" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="mixture">Fecha de Ingreso:</span>
+                        <input type="date" class="form-control" name="mixture" placeholder="aaaa-mm-dd" />
                         <br>
-                        <span class="input-group-text" id="company">Hora Fin</span>
-                        <input type="time" class="form-control" name="company" />
+                        <span class="input-group-text" id="itemBaseUnit">Hora de Ingreso:</span>
+                        <input type="time" class="form-control" name="itemBaseUnit" />
                     </div>
-                    <div class="input-group mb-3">
-                        <span class="input-group-text" id="specifications">Profesor (PC)</span>
-                        <input type="text" class="form-control" name="specifications"
-                            placeholder="Nombre y Apellido (opcional)" required size="30" maxlength="30"
-                            aria-describedby="specifications" />
-                    </div>
+
+
                     <div>
                         <br />
                         <button type="button" onclick="cargar()" class="btn btn-danger">Cargue/Edición
                             Información</button>
+                        <!--<button>Cargue/Edición en Base de Datos</button>-->
+                        <!--<br/>
+        <button onclick="limpiar()">Limpiar Campos</button>-->
+                        <br />
                     </div>
                     <br />
+                </form>
+
             </div>
             <div class="col">
-
-                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjAicGp7zZs_-sYcVkECRES8mnG15ydKILbip_gHqng6PoZjJEbVxjkDjqo_sv5LTYVGhoYFrInApgkkpCbcwLuF6nOyr76FkOW0UB1z4Zdfwb84fU34v4nrlYN8QcocD39x9mX9ZDmXiHlL61HjAS9d5YB_4rgs5pGUpf96i5xsh9G8Vcd5CvB7-zq=w439-h299"
-                    alt="Foto Etiqueta" title="Templae IQ SPACES" width="700" height="450" />
+                <div class="text-center">
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgomhuL7hOk98XMVcyLpD-ZK3S88FkGHZBnsLCESI44AQrwKq5ULXFd6j74EonqtdNH9x9TWAxx7Blx_kvG5QKV2kX0cFeWmx9Jv3nz-N0A3qThc8vul9sUjbQDktv_bowYqNyNTkLFTyCrjwRPYFRo_Twk74eqorp4pxzu1SXMn3uWcSJrh2WjcyOd=w461-h274"
+                        class="rounded mx-auto d-block" title="Templae IQ SPACES" width="700" height="450" />
+                </div>
             </div>
-
-            </form>
             <br />
             <br />
+            <div>
+                <label>
+                    <h5></h5>
+                </label>
+            </div>
             <div class="formatotabla">
                 <table id="transactionTable">
                     <tr>
                         <th>
-                            Salón
+                            Hab. Asignada
                         </th>
                         <th>
-                            Fecha de ocupación
+                            Nombre Completo
                         </th>
                         <th>
-                            Hora Inicio
+                            # Documento
                         </th>
                         <th>
-                            Hora Fin
+                            Brazalete
                         </th>
                         <th>
-                            Profesor
+                            Fecha Nacimiento
                         </th>
                         <th>
-                            Materia
+                            Edad
                         </th>
                         <th>
-                            Estado de Ocupación
+                            Sexo
                         </th>
                         <th>
-                            Fecha Próxima Clase (PC)
+                            Grupo y RH
                         </th>
                         <th>
-                            Hora inicio (PC)
+                            EPS
                         </th>
                         <th>
-                            Hora fin (PC)
+                            Alergias
                         </th>
                         <th>
-                            Profesor (PC)
+                            Riesgo de Caidas
+                        </th>
+                        <th>
+                            Doctor Tratante
+                        </th>
+                        <th>
+                            Link historia Clínica
+                        </th>
+                        <th>
+                            Fecha de Ingreso
+                        </th>
+                        <th>
+                            Hora de Ingreso
+                        </th>
+
+                        <th>
+                            Categoria
                         </th>
                         <th>
                             Fecha envio Info
                         </th>
-
+                    </tr>
+                    <!--<tr>
+                <td>123456789</td>
+                <td>Jairo Massard</td>
+                <td>72004236</td>
+                <td>100000011</td>
+                <td>1978-07-08</td>
+                <td>43</td>
+                <td>Masculino</td>
+                <td>A+</td>
+                <td>Ninguna</td>
+                <td>Bajo</td>
+                <td>Adriana Pardo</td>
+                <td>2022-05-23</td>
+                <td>10:00AM</td>
+                <td>http://www.iqspaces.com.co</td>
+                <td>101A</td>
+            </tr>-->
 
                 </table>
 
             </div>
-        </div>
 
-        <script>
+            <script>
 
-            //CALCULO FORMATO FECHA
+                //CALCULO FORMATO FECHA
 
-            var fecha = new Date();
-            fecha.setHours(fecha.getHours() + 13);
+                var fecha = new Date();
+                fecha.setHours(fecha.getHours() + 13);
 
-            //document.getElementById("demo").innerHTML = fecha;
+                //document.getElementById("demo").innerHTML = fecha;
 
-            var hoy = fecha.getDate();
-            var mesActual = fecha.getMonth() + 1;
-            //const hora = fecha.getHours();
-            const year = fecha.getFullYear();
-            //const year2 = fecha.
+                var hoy = fecha.getDate();
+                var mesActual = fecha.getMonth() + 1;
+                //const hora = fecha.getHours();
+                const year = fecha.getFullYear();
+                //const year2 = fecha.
 
-            if (mesActual < 10) mesActual = '0' + mesActual;
-            if (hoy < 10) hoy = '0' + hoy;
+                if (mesActual < 10) mesActual = '0' + mesActual;
+                if (hoy < 10) hoy = '0' + hoy;
 
-            const formatofecha = year + "-" + mesActual + "-" + hoy;
-            //document.getElementById("demo").innerHTML = formatofecha;
-
-
-            //SCRIPTS de la pagina
-
-            const form = document.getElementById("transationform");
-            //console.log(form)
-
-            function cargar() {
-                alert("Envio exitoso de formulario");
-                //event.preventDefault();
-                let transactionFormData = new FormData(form);
-                let transactionObj = convertFormDataToTransactionObj(transactionFormData);
-                //console.log(transactionObj);
-                //console.log(transactionObj);
-                saveTransactionObj(transactionObj);
-                insertRowInTransactionTable(transactionObj);
-                EnviarYalaInfo(transactionObj);
-                //form.reset()
-            }
-
-            document.addEventListener("DOMContentloaded", function (event1) {
-                let transactionObjArr = [JSON.parse(localStorage.getItem("transactionData"))];
-                transactionObjArr.forEach(
-                    function (arrayElement) {
-                        insertRowInTransactionTable(arrayElement);
-                        //console.log(arrayElement);
-                        //console.log("Se insertan elementos desde localStorage")
-                    }
-                )
-            }
-            )
+                const formatofecha = year + "-" + mesActual + "-" + hoy;
+                //document.getElementById("demo").innerHTML = formatofecha;
 
 
+                //SCRIPTS de la pagina
 
-            function convertFormDataToTransactionObj(transactionFormData) {
+                const form = document.getElementById("transationform");
+                //console.log(form)
 
-                let itemName = transactionFormData.get("itemName");
-                let itemBarCode = itemName;
-                let merchantGoodsId = itemName;
-                let merchantGoodsCategoryId = itemName;
-                let eatMethod = transactionFormData.get("eatMethod");
-                let itemBaseUnit = transactionFormData.get("itemBaseUnit");
-                let storageCondition = transactionFormData.get("storageCondition");
-                let mixture = transactionFormData.get("mixture");
-                let goodsNo = transactionFormData.get("goodsNo");
-                let license = transactionFormData.get("license");
-                let itemProductionPlace = transactionFormData.get("itemProductionPlace");
-                let company = transactionFormData.get("company");
-                let grade = transactionFormData.get("grade");
-                let specifications = transactionFormData.get("specifications");
-                let itemQrCode = transactionFormData.get("itemQrCode");
-                let categoryName = "Salones de Clase";
-
-                return {
-                    "itemName": itemName,
-                    "itemBarCode": itemBarCode,
-                    "merchantGoodsId": merchantGoodsId,
-                    "merchantGoodsCategoryId": merchantGoodsCategoryId,
-                    "eatMethod": eatMethod,
-                    "itemBaseUnit": itemBaseUnit,
-                    "mixture": mixture,
-                    "goodsNo": goodsNo,
-                    "license": license,
-                    "storageCondition": storageCondition,
-                    "itemProductionPlace": itemProductionPlace,
-                    "company": company,
-                    "grade": grade,
-                    "specifications": specifications,
-                    "itemQrCode": itemQrCode,
-                    "categoryName": categoryName,
-                    //                "FechaEnvio": FechaEnvio 
+                function cargar() {
+                    alert("Envio exitoso de formulario");
+                    //event.preventDefault();
+                    let transactionFormData = new FormData(form);
+                    let transactionObj = convertFormDataToTransactionObj(transactionFormData);
+                    //console.log(transactionObj);
+                    console.log(transactionObj);
+                    saveTransactionObj(transactionObj);
+                    insertRowInTransactionTable(transactionObj);
+                    EnviarYalaInfo(transactionObj);
+                    //form.reset()
                 }
-            }
+
+                document.addEventListener("DOMContentloaded", function (event1) {
+                    let transactionObjArr = [JSON.parse(localStorage.getItem("transactionData"))];
+                    transactionObjArr.forEach(
+                        function (arrayElement) {
+                            insertRowInTransactionTable(arrayElement);
+                            //console.log(arrayElement);
+                            //console.log("Se insertan elementos desde localStorage")
+                        }
+                    )
+                }
+                )
+
+                function convertFormDataToTransactionObj(transactionFormData) {
+                    let itemBarCode = transactionFormData.get("itemBarCode");
+                    let itemName = transactionFormData.get("itemName");
+                    let merchantGoodsId = itemBarCode;
+                    let merchantGoodsCategoryId = itemBarCode;
+                    let goodsNo = transactionFormData.get("goodsNo");
+                    let stock = transactionFormData.get("stock");
+                    let manufacture = transactionFormData.get("manufacture");
+                    let storageCondition = transactionFormData.get("storageCondition");
+                    let eatMethod = transactionFormData.get("eatMethod");
+                    let itemProductionPlace = transactionFormData.get("itemProductionPlace");
+                    let license = transactionFormData.get("license");
+                    let specifications = transactionFormData.get("specifications");
+                    let grade = transactionFormData.get("grade");
+                    let company = transactionFormData.get("company");
+                    let itemQrCode = transactionFormData.get("itemQrCode");
+                    let mixture = transactionFormData.get("mixture");
+                    let itemBaseUnit = transactionFormData.get("itemBaseUnit");
+                    let categoryName = "Paciente";
+                    return {
+                        "itemBarCode": itemBarCode,
+                        "itemName": itemName,
+                        "merchantGoodsId": merchantGoodsId,
+                        "merchantGoodsCategoryId": merchantGoodsCategoryId,
+                        "goodsNo": goodsNo,
+                        "stock": stock,
+                        "manufacture": manufacture,
+                        "storageCondition": storageCondition,
+                        "eatMethod": eatMethod,
+                        "itemProductionPlace": itemProductionPlace,
+                        "license": license,
+                        "specifications": specifications,
+                        "grade": grade,
+                        "company": company,
+                        "itemQrCode": itemQrCode,
+                        "mixture": mixture,
+                        "itemBaseUnit": itemBaseUnit,
+                        "categoryName": categoryName
+                    }
+                }
 
 
-            function insertRowInTransactionTable(transactionObj) {
-                let transactionTableRef = document.getElementById("transactionTable");
+                function insertRowInTransactionTable(transactionObj) {
+                    let transactionTableRef = document.getElementById("transactionTable");
 
-                let newtransactionRowRef = transactionTableRef.insertRow(-1);
+                    let newtransactionRowRef = transactionTableRef.insertRow(-1);
 
-                newTypeCellRef = newtransactionRowRef.insertCell(0);
-                newTypeCellRef.textContent = transactionObj["itemName"];
+                    let newTypeCellRef = newtransactionRowRef.insertCell(0);
+                    newTypeCellRef.textContent = transactionObj["itemBarCode"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(1);
-                newTypeCellRef.textContent = transactionObj["eatMethod"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(1);
+                    newTypeCellRef.textContent = transactionObj["itemName"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(2);
-                newTypeCellRef.textContent = transactionObj["itemBaseUnit"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(2);
+                    newTypeCellRef.textContent = transactionObj["goodsNo"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(3);
-                newTypeCellRef.textContent = transactionObj["storageCondition"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(3);
+                    newTypeCellRef.textContent = transactionObj["stock"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(4);
-                newTypeCellRef.textContent = transactionObj["mixture"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(4);
+                    newTypeCellRef.textContent = transactionObj["manufacture"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(5);
-                newTypeCellRef.textContent = transactionObj["goodsNo"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(5);
+                    newTypeCellRef.textContent = transactionObj["storageCondition"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(6);
-                newTypeCellRef.textContent = transactionObj["grade"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(6);
+                    newTypeCellRef.textContent = transactionObj["eatMethod"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(7);
-                newTypeCellRef.textContent = transactionObj["license"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(7);
+                    newTypeCellRef.textContent = transactionObj["itemProductionPlace"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(8);
-                newTypeCellRef.textContent = transactionObj["itemProductionPlace"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(8);
+                    newTypeCellRef.textContent = transactionObj["license"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(9);
-                newTypeCellRef.textContent = transactionObj["company"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(9);
+                    newTypeCellRef.textContent = transactionObj["specifications"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(10);
-                newTypeCellRef.textContent = transactionObj["specifications"];
+                    newTypeCellRef = newtransactionRowRef.insertCell(10);
+                    newTypeCellRef.textContent = transactionObj["grade"];
 
-                newTypeCellRef = newtransactionRowRef.insertCell(11);
-                newTypeCellRef.textContent = new Date();
+                    newTypeCellRef = newtransactionRowRef.insertCell(11);
+                    newTypeCellRef.textContent = transactionObj["company"];
 
-            }
+                    newTypeCellRef = newtransactionRowRef.insertCell(12);
+                    newTypeCellRef.textContent = transactionObj["itemQrCode"];
 
-            function saveTransactionObj(transactionObj) {
-                //Jalo lo que hay en el Local Storage, lo convierto a Variable y lo asigno a un array de transacciones
-                let myTransactionArray = [JSON.parse(localStorage.getItem("transactionData"))] || [];
-                myTransactionArray.push(transactionObj);
-                //convierto mi Array de transacciones a JSON
-                let transactionArrayJSON = JSON.stringify(myTransactionArray);
-                //Guardo mi array de transacciones en formato JSON en Local storage
-                //localStorage.setItem("transactionData", transactionArrayJSON)
+                    newTypeCellRef = newtransactionRowRef.insertCell(13);
+                    newTypeCellRef.textContent = transactionObj["mixture"];
 
-            }
+                    newTypeCellRef = newtransactionRowRef.insertCell(14);
+                    newTypeCellRef.textContent = transactionObj["itemBaseUnit"];
 
-            //function limpiar() {
-            //    form.reset()
-            //}
+                    newTypeCellRef = newtransactionRowRef.insertCell(15);
+                    newTypeCellRef.textContent = transactionObj["categoryName"];
 
-            function EnviarYalaInfo(transactionObj) {
-                var myHeaders = new Headers();
-                myHeaders.append("veryText", hash1);
-                myHeaders.append("merchantCode", "MC1220");
-                myHeaders.append("type", "1");
-                myHeaders.append("content-type", "application/json");
+                    newTypeCellRef = newtransactionRowRef.insertCell(16);
+                    newTypeCellRef.textContent = new Date();
 
-                var raw = JSON.stringify([transactionObj]);
-                console.log(raw)
+                }
 
-                var requestOptions = {
-                    method: 'POST',
-                    headers: myHeaders,
-                    body: raw,
-                    redirect: 'follow'
+                function saveTransactionObj(transactionObj) {
+                    //Jalo lo que hay en el Local Storage, lo convierto a Variable y lo asigno a un array de transacciones
+                    let myTransactionArray = [JSON.parse(localStorage.getItem("transactionData"))] || [];
+                    myTransactionArray.push(transactionObj);
+                    //convierto mi Array de transacciones a JSON
+                    let transactionArrayJSON = JSON.stringify(myTransactionArray);
+                    //Guardo mi array de transacciones en formato JSON en Local storage
+                    localStorage.setItem("transactionData", transactionArrayJSON)
+
+                }
+
+                //function limpiar() {
+                //    form.reset()
+                //}
+
+                function EnviarYalaInfo(transactionObj) {
+                    var myHeaders = new Headers();
+                    myHeaders.append("veryText", hash1);
+                    myHeaders.append("merchantCode", "MC1220");
+                    myHeaders.append("type", "1");
+                    myHeaders.append("content-type", "application/json");
+
+                    var raw = JSON.stringify([transactionObj]);
+                    console.log(raw)
+
+                    var requestOptions = {
+                        method: 'POST',
+                        headers: myHeaders,
+                        body: raw,
+                        redirect: 'follow'
+                    };
+
+                    fetch("https://sg.yalabi.net/open/saveOrGoods", requestOptions)
+                        .then(response => response.json())
+                        .then(result => console.log(result))
+                        .catch(error => console.log('error', error));
+
                 };
 
-                fetch("https://sg.yalabi.net/open/saveOrGoods", requestOptions)
-                    .then(response => response.json())
-                    .then(result => console.log(result))
-                    .catch(error => console.log('error', error));
+
+                //function buscar(){
+                //var myHeaders = new Headers();
+                //myHeaders.append("veryText", "a9e787bcbc24f5a71019969090387ff9");
+                //myHeaders.append("merchantCode", "MC1220");
+                //myHeaders.append("content-type", "application/json");
+
+                //var raw = JSON.stringify({
+                //"pageSize": 30
+                //});
+
+                //var requestOptions = {
+                //method: 'POST',
+                //headers: myHeaders,
+                //body: raw,
+                //redirect: 'follow'
+                //};
+
+                //fetch("https://sg.yalabi.net/open/getGoodsList", requestOptions)
+                //.then(response => response.json())
+                //.then(result => console.log(result.data.list))
+                //.catch(error => console.log('error', error));
+                //}
 
 
-            };
+                let hash1 = md5("83C3A53C05553cb" + formatofecha);
+                console.log(hash1)
 
-            let hash1 = md5("83C3A53C05553cb" + formatofecha);
-            console.log(hash1)
-
-        </script>
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+                integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+                integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+                crossorigin="anonymous"></script>
 
 
 </body>
