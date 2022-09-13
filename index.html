@@ -27,10 +27,10 @@
         <div class="row align-items-end">
             <div class="col">
                 <!-- Logo IQ Spaces-->
-                <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
-                                    alt="Logo" title="Foto tomada por Jairo" width="300" height="120" />-->
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjada1WwebPQeQrf7rIaoJgy-g2_AOlzT27I8-Qb0LsiSNxjOC6euxb9fGvK2PUAfRpmpFuLvNVMgsOBo_wa4D7z0rqYrXvGIolj08-4lXaniwxx6YJaO_0o_AoLBH7JmiEGoJn1GK70DEz0KdS5eZz3WOezMpAJNif3Cmt8IuFD6hr9nxCQAYEaD_3/s320/Hospital%20universitario%20san%20Ignacio.jpg"
-                    alt="Logo" title="Foto tomada por Jairo" width="115" height="100" />
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
+                    alt="Logo" title="Foto tomada por Jairo" width="300" height="120" />
+                <!--<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjada1WwebPQeQrf7rIaoJgy-g2_AOlzT27I8-Qb0LsiSNxjOC6euxb9fGvK2PUAfRpmpFuLvNVMgsOBo_wa4D7z0rqYrXvGIolj08-4lXaniwxx6YJaO_0o_AoLBH7JmiEGoJn1GK70DEz0KdS5eZz3WOezMpAJNif3Cmt8IuFD6hr9nxCQAYEaD_3/s320/Hospital%20universitario%20san%20Ignacio.jpg"
+                    alt="Logo" title="Foto tomada por Jairo" width="115" height="100" />-->
             </div>
             <div class="col">
             </div>
@@ -153,7 +153,7 @@
             </div>
             <div class="col">
                 <div class="text-center">
-                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgomhuL7hOk98XMVcyLpD-ZK3S88FkGHZBnsLCESI44AQrwKq5ULXFd6j74EonqtdNH9x9TWAxx7Blx_kvG5QKV2kX0cFeWmx9Jv3nz-N0A3qThc8vul9sUjbQDktv_bowYqNyNTkLFTyCrjwRPYFRo_Twk74eqorp4pxzu1SXMn3uWcSJrh2WjcyOd=w461-h274"
+                    <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgKbA3N5WDVQlXqI5WzbppHSSuJ6eCOGR6TROwf6LuRN49d31jRdT9tMoM5_V394HXpUCcBfVX3flC-aJX1hfxK2mDz45zG4PVAHnLTcbprVAkvs6PAGCOPUwfpGOUysl3pCYWYCfG9J-a4_Go88P5lZeyOA6WX24dOLlWfJX6WVYbbjXj3JnfEm8XG=w462-h272"
                         class="rounded mx-auto d-block" title="Templae IQ SPACES" width="700" height="450" />
                 </div>
             </div>
@@ -275,7 +275,7 @@
                     let transactionFormData = new FormData(form);
                     let transactionObj = convertFormDataToTransactionObj(transactionFormData);
                     //console.log(transactionObj);
-                    //console.log(transactionObj);
+                    console.log(transactionObj);
                     saveTransactionObj(transactionObj);
                     insertRowInTransactionTable(transactionObj);
                     EnviarYalaInfo(transactionObj);
@@ -401,7 +401,7 @@
                     //convierto mi Array de transacciones a JSON
                     let transactionArrayJSON = JSON.stringify(myTransactionArray);
                     //Guardo mi array de transacciones en formato JSON en Local storage
-                    //localStorage.setItem("transactionData", transactionArrayJSON)
+                    localStorage.setItem("transactionData", transactionArrayJSON)
 
                 }
 
